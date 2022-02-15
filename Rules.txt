@@ -1,0 +1,18 @@
+RULES:
+1.	If Electronic items are low and Grocery items are low and competition is less then sales are poor
+2.	If Electronic items are average and Grocery items are low and competition is less then sales are average
+3.	If Electronic items are low and Grocery items are average and competition is less then sales are average
+4.	If Electronic items are low and Grocery items are low and competition is few then sales are poor
+5.	If Electronic items are high and Grocery items are low and competition is less then sales are average
+6.	If Electronic items are low and Grocery items are high and competition is less then sales are average
+7.	If Electronic items are high and Grocery items are high and competition is less then sales are excellent
+8.	If Electronic items are high and Grocery items are high and competition is more then sales are average
+9.	If Electronic items are average and Grocery items are average and competition is few then sales are average
+10.	If Electronic items are high and Grocery items are high and competition is not more then sales are excellent
+11.	If Electronic items are low and Grocery items are low then sales are poor
+12.	If Electronic items are low and Grocery items are average and competition is more then sales are poor
+13.	If Electronic items are high and Grocery items are average and competition is less then sales are excellent
+14.	If Electronic items are high and Grocery items are low and competition is more then sales are average
+15.	If Electronic items are average and Grocery items are high and competition is not more then sales are excellent
+16.	If Electronic items are low and Grocery items are high and competition is few then sales are average
+17.	If Electronic items are average and Grocery items are high and competition is less then sales are excellent
