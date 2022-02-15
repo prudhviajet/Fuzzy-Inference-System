@@ -1,0 +1,63 @@
+[System]
+Name='Assignment5'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=17
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Electronics_items'
+Range=[0 10]
+NumMFs=3
+MF1='low':'trapmf',[0 0 3 4.25]
+MF2='average':'trapmf',[4.25 5 7.5 8]
+MF3='high':'trapmf',[7.75 8 10 10]
+
+[Input2]
+Name='Groceries_items'
+Range=[0 10]
+NumMFs=3
+MF1='low':'trapmf',[0 0 3 4.25]
+MF2='average':'trapmf',[4.25 5 7.5 8]
+MF3='high':'trapmf',[7.75 8 10 10]
+
+[Input3]
+Name='Competitors_in_the_vicinity'
+Range=[0 10]
+NumMFs=3
+MF1='less':'trapmf',[0 0 3 4.25]
+MF2='few':'trapmf',[4.25 5 7.5 8]
+MF3='more':'trapmf',[7.75 8 10 10]
+
+[Output1]
+Name='Sales_Rating'
+Range=[0 10]
+NumMFs=3
+MF1='poor':'trapmf',[0 0 3 4.5]
+MF2='average':'trapmf',[4.5 5 7.75 8]
+MF3='excellent':'trapmf',[7.5 8 10 10]
+
+[Rules]
+1 1 1, 1 (1) : 1
+2 1 1, 2 (1) : 1
+1 2 1, 2 (1) : 1
+1 1 2, 1 (1) : 1
+3 1 1, 2 (1) : 1
+1 3 1, 2 (1) : 1
+3 3 1, 3 (1) : 1
+3 3 3, 2 (1) : 1
+2 2 2, 2 (1) : 1
+3 3 -3, 3 (1) : 1
+1 1 0, 1 (1) : 1
+1 2 3, 1 (1) : 1
+3 2 1, 3 (1) : 1
+3 1 3, 2 (1) : 1
+2 3 -3, 3 (1) : 1
+1 3 2, 2 (1) : 1
+2 3 1, 3 (1) : 1
